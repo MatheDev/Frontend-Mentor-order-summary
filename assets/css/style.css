@@ -1,0 +1,171 @@
+/* importing font */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+/* reset */
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+:root{
+  /* colors */
+  /* Primary */
+
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+
+/* Neutral */
+
+--Very-pale-blue: hsl(225, 100%, 98%);
+--Desaturated-blue: hsl(224, 23%, 55%);
+--Dark-blue: hsl(223, 47%, 23%);
+
+}
+
+/* body */
+
+body{
+  font-family: 'Red Hat', sans-serif;
+
+  background: var(--Desaturated-blue);
+  
+  height: 100vh;
+  
+ display:flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+
+ padding: 20px;
+  
+}
+
+/* main */
+main{
+  max-width: 340px;
+  height: auto;
+  
+}
+
+
+/* card container */
+
+.card{
+  width: 100%;
+  height: 100%;
+  background-color: var(--Pale-blue);
+  border-radius: 10px;  
+}
+
+/* card background img */
+
+.card-img-bg img{
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  
+}
+
+/* card description */
+
+.card-description{
+  padding: 10px 20px;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  width: 100%;
+}
+
+.card-description .title{
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+.card-description .desc-text{
+  font-weight: 500;
+  color: var(--Desaturated-blue);
+  text-align: center;
+  max-width: 90%;
+  line-height: 25px;
+}
+
+/* card section annual plan */
+
+.card-description .annual-plan{
+  margin: 20px 0;
+  padding: 10px 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+  width: 100%;
+
+  background-color: var(--Very-pale-blue);
+  border-radius: 20px;
+}
+
+.card-description .annual-plan .icon{ 
+  border-radius: 10px;
+}
+
+.card-description .annual-plan .value-plan{
+  width: 50%;
+  text-align: center;
+}
+
+.card-description .annual-plan .value-plan h4{
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.card-description .annual-plan .value-plan span{
+  color: var(--Desaturated-blue);
+}
+
+.card-description .annual-plan a{
+  font-weight: 700;
+}
+
+/* card section buttons */
+
+.card-description .btn,
+.card-description .btn-cancel{
+  cursor: pointer;
+}
+
+.card-description .btn{
+  background-color: var(--Bright-blue);
+  color: var(--Pale-blue);
+  width: 100%;
+  padding: 20px 30px;
+  border-radius: 15px;
+  border: 0;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.card-description .btn:hover{
+  background-color: var(--Dark-blue);
+}
+
+.card-description .btn-cancel{
+  border: 0;
+  width: 100%;
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+/* copy */
+
+.attribution{
+  display: flex;
+  font-size: 14px;
+  margin-top: 20px;
+  
+}
+
