@@ -158,6 +158,11 @@ main{
   font-weight: 700;
   font-size: 0.9rem;
   margin-bottom: 20px;
+  background: transparent;
+}
+
+.card-description .btn-cancel:hover{
+    color: var(--Desaturated-blue);
 }
 
 /* copy */
